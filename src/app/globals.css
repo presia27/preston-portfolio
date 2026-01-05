@@ -3,9 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --accent-main: #e6eff8;
-  --accent-darker: rgb(183, 191, 200);
-  --accent-lighter: #f3f7fc;
+  --accent-main: #e6eff8; /* Accent 1 */
+  --accent-darker: #b7bfc8; /* Accent 2 */
+  --accent-lighter: #f3f7fc; /* Accent 1 Light */
 }
 
 @theme {
@@ -30,7 +30,7 @@ body {
   font-family: var(--font-open-sans), Arial, Helvetica, sans-serif;
 }
 
-h1 {
+.bigHeader {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 8px;
