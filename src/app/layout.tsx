@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import { Nav } from "@/components/nav/Nav";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -22,6 +23,9 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} antialiased`}
       >
+        <nav>
+          <Nav></Nav>
+        </nav>
         {children}
       </body>
     </html>
