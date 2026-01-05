@@ -3,11 +3,18 @@ import Link from "next/link";
 
 export function Nav() {
   return (
-    <div className="">
+    <div className="bg-accent-lighter/95 accentShadow">
       <div className="contentMargins flex flex-row justify-between gap-2">
-        <div>
+        <div className="content-center">
           <Link href="/">
-            Placeholder
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="PSiaProfileGraphic.png"
+              alt="Main Graphic"
+              width="56"
+              height="56"
+              className="rounded-2xl"
+            />
           </Link>
         </div>
 
@@ -16,7 +23,7 @@ export function Nav() {
             <Link
               key={item.id}
               href={item.url}
-              className="hover:underline"
+              className="hover:underline p-2"
             >
               {item.title}
             </Link>
