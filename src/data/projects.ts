@@ -37,6 +37,41 @@ interface ProjectImages {
 
 export const projects: ProjectDescription[] = [
   {
+    id: 9,
+    featured: true,
+    title: 'SETLib',
+    role: 'Front End Team Lead and Developer',
+    association: 'Tech Startup Club UW Tacoma',
+    client: null,
+    stack: ['TypeScript', 'Next.js', 'Node.js'],
+    startDate: '2025-06-16',
+    endDate: null,
+    projectPage: '',
+    liveSite: 'https://uwsetlib.vercel.app',
+    synopsis: 'A document management system for the TCSS facilitators at UW Tacoma',
+    longDescription: '[to be filled]',
+    contributions: [
+      'To be filled',
+      'To be filled'
+    ],
+    pageDetails: [
+      {
+        section: 'Problem',
+        title: '[to be filled]',
+        description: 'To be filled',
+        subcontent: [
+          { heading: 'To be filled', content: 'To be filled' },
+          { heading: 'To be filled', content: 'To be filled' }
+        ]
+      }
+    ],
+    images: {
+      cardImage: "#",
+      bannerImage: "#",
+      gallery: []
+    }
+  },
+  {
     id: 8,
     featured: true,
     title: 'Is The Bridge Up?',
@@ -75,7 +110,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "#",
+      cardImage: "isthebridgeup_card.png",
       bannerImage: "#",
       gallery: []
     }

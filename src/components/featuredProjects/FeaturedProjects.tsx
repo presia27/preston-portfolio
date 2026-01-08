@@ -8,13 +8,16 @@ export function FeaturedProjects() {
   return (
     <div>
       {featuredProjects.map((project) => (
-        <div key={project.id} className='flex gap-2'>
+        <div key={project.id} className='flex gap-8 mb-6'>
           <div>
-            <img src={project.images.cardImage} alt={`Image featuring ${project.title}`} width="194" />
+            {project.images.cardImage && project.images.cardImage !== '#' 
+              ? <img src={"/cardimg/" + project.images.cardImage} alt={`Image featuring ${project.title}`} width="194" height="145" />
+              : <div className='w-48.5 h-36.25 bg-accent-lighter border border-accent-darker rounded-4xl'></div>}
+            
           </div>
           <div className='basis-[40%]'>
             <h3 className='font-semibold text-2xl'>{project.title}</h3>
-            <h4 className='italic'>{project.role} | {project.association}</h4>
+            <h4 className='italic mb-2'>{project.role} | {project.association}</h4>
             <p className='mt-1 mb-1'>{project.synopsis}</p>
           </div>
           <div className='flex gap-1 flex-wrap items-start'>
