@@ -29,9 +29,10 @@
   },
   "homepage": "https://github.com/presia27/preston-portfolio",
   "dependencies": {
+    "dayjs": "^1.11.21",
     "next": "16.2.9",
-    "react": "^19.2.3",
-    "react-dom": "19.2.3",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "react-intl": "^8.0.10"
   },
   "devDependencies": {

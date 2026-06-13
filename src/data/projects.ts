@@ -45,7 +45,7 @@ export const projects: ProjectDescription[] = [
     client: null,
     stack: ['TypeScript', 'Next.js', 'Node.js'],
     startDate: '2025-06-16',
-    endDate: null,
+    endDate: '2026-04-01',
     projectPage: '',
     liveSite: 'https://uwsetlib.vercel.app',
     synopsis: 'A document management system for the TCSS facilitators at UW Tacoma',

@@ -7,16 +7,22 @@ export interface NavLink {
 
 export const navLinks: NavLink[] = [
   {
-    id: 'projects',
-    title: 'Projects',
+    id: 'software',
+    title: 'Software & Design',
     type: 'item',
-    url: '/projects'
+    url: '/software'
   },
   {
-    id: 'experience',
-    title: 'Experience',
+    id: 'gis',
+    title: 'GIS',
     type: 'item',
-    url: '/experience'
+    url: '/gis'
+  },
+  {
+    id: 'photography',
+    title: 'Photography',
+    type: 'item',
+    url: '/photography'
   },
   {
     id: 'about',
