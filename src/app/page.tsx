@@ -1,3 +1,5 @@
+import { FeaturedProjects } from "@/components/featuredProjects/FeaturedProjects";
+
 export default function Home() {
   return (
     <main className="contentMargins mt-16">
@@ -22,6 +24,7 @@ export default function Home() {
       </section>
       <section>
         <h2 className="bigHeader">Featured</h2>
+        <FeaturedProjects></FeaturedProjects>
       </section>
     </main>
   );
