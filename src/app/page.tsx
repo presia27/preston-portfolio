@@ -2,11 +2,11 @@ import { FeaturedProjects } from "@/components/featuredProjects/FeaturedProjects
 
 export default function Home() {
   return (
-    <main className="contentMargins mt-16">
+    <main className="contentMargins mt-32">
       <section>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between pb-12">
           <div>
-            <h1 className="bigHeader">Welcome!</h1>
+            <h1 className="bigHeader">Hi There!</h1>
             <p>
               I&apos;m Preston, a software developer in the Seattle area.
             </p>
