@@ -1,4 +1,4 @@
-interface ProjectDescription {
+export interface ProjectDescription {
   id: number;
   featured: boolean; // specifies whether a project is a featured project (front-page project)
   title: string;

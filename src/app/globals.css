@@ -6,6 +6,7 @@
   --accent-main: #e6eff8; /* Accent 1 */
   --accent-darker: #b7bfc8; /* Accent 2 */
   --accent-lighter: #f3f7fc; /* Accent 1 Light */
+  --link-color: #104e64;
 }
 
 @theme {
@@ -43,4 +44,12 @@ body {
 
 .accentShadow {
   box-shadow: 0 4px 4px 0 rgba(183, 191, 200, 0.25);
+}
+
+.link {
+  color: var(--link-color);
+}
+
+.link:hover {
+  text-decoration: underline;
 }
