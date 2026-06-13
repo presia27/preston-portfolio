@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Nav() {
   return (
-    <div className="bg-accent-lighter/95 accentShadow">
+    <nav className="bg-accent-lighter/95 accentShadow">
       <div className="contentMargins flex flex-row justify-between gap-2">
         <div className="content-center">
           <Link href="/">
@@ -30,6 +30,6 @@ export function Nav() {
           ))}
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

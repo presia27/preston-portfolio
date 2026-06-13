@@ -23,9 +23,9 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} antialiased`}
       >
-        <nav className="fixed top-0 w-screen">
+        <header className="fixed top-0 w-screen">
           <Nav></Nav>
-        </nav>
+        </header>
         {children}
       </body>
     </html>
