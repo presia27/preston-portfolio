@@ -13,7 +13,6 @@ export async function generateMetadata({ params }: { params: Promise<{ projectid
 
 export default async function DetailsPage({ params }: { params: Promise<{ projectid: string }>}) {
   const { projectid } = await params; 
-  console.log(projectid);
 
   if (!projectid) return;
   const projectFilter = projects.filter((project) => project.id === Number(projectid))
