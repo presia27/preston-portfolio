@@ -9,7 +9,7 @@ export function Nav() {
           <Link href="/">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="PSiaProfileGraphic.png"
+              src="/PSiaProfileGraphic.png"
               alt="Main Graphic"
               width="56"
               height="56"

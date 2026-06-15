@@ -25,12 +25,12 @@ interface PageDetailsDescription {
   subcontent: DetailsSubcontent[];
 }
 
-type SubcontentTypes = 'blocktext' | 'listpoint' | 'image';
+type SubcontentTypes = 'listpoint' | 'image';
 
 interface DetailsSubcontent {
   type: SubcontentTypes;
-  heading?: string;
-  content: string; // text for blocktext or listpoint, URL for image
+  heading: string; // Bold text for listpoint, alt text for image
+  content: string; // text for listpoint, URL for image
 }
 
 interface ProjectImages {
@@ -51,14 +51,14 @@ export const projects: ProjectDescription[] = [
     title: 'SETLib',
     role: 'Front End Team Lead and Developer',
     association: 'Tech Startup Club UW Tacoma',
-    client: null,
+    client: 'UW Tacoma SET',
     stack: ['TypeScript', 'Next.js', 'Node.js'],
     startDate: '2025-06-16',
     endDate: '2026-04-01',
-    projectPage: '',
+    projectPage: null,
     liveSite: 'https://uwsetlib.vercel.app',
     synopsis: 'A document management system for the TCSS facilitators at UW Tacoma',
-    longDescription: '[to be filled]',
+    longDescription: 'A document management system designed for the computer science seminar facilitator program at the University of Washington Tacoma. This full-stack application enables users to add, search, and manage worksheet questions related to computer science topics.',
     contributions: [
       'Organize team deliverables through project sprints and maintain documentation, ensuring clear communication of the club\'s vision while maintaining project timelines.',
       'Built the login system on the Next.js front end to ensure secure, intuitive access by users.',
@@ -67,11 +67,29 @@ export const projects: ProjectDescription[] = [
     pageDetails: [
       {
         section: 'Problem',
-        title: '[to be filled]',
-        description: 'To be filled',
+        title: 'Worksheet documents are disorganized and hard to manage',
+        description: 'Files were stored as a series of PDF and Word documents in a shared Google Drive, often poorly organized with some content missing altogether.',
         subcontent: [
-          { type: 'listpoint', heading: 'To be filled', content: 'To be filled' },
-          { type: 'listpoint', heading: 'To be filled', content: 'To be filled' }
+          { type: 'listpoint', heading: 'Duplicates', content: 'Multiple worksheets contained inadvertent duplicates since previous problems were hard to find and verify.' },
+          { type: 'listpoint', heading: 'Missing work', content: 'Some worksheets never made it to the shared drive and is considered lost.' },
+          { type: 'listpoint', heading: 'Wasted time', content: 'The shared drive system required tedious work that needed to be spent on managing documents rather than focusing on teaching.' }
+        ]
+      },
+      {
+        section: 'Goals',
+        title: 'Create a centralized hub for searching and building high-quality worksheets and worksheet content',
+        description: 'Stakeholders desired a web-based solution where facilitators could search for worksheet questions using filters, generate worksheets from these questions, and submit problems through a peer-reviewed system.',
+        subcontent: [
+          { type: 'listpoint', heading: 'Intuitive search', content: 'Allow searching by category, difficulty, course, question type, and keyword.' },
+          { type: 'listpoint', heading: 'Quality control', content: 'Peer review and approval system that professors can use to vet problems before final submission.' }
+        ]
+      },
+      {
+        section: 'Results',
+        title: '',
+        description: 'Check back in for more information.',
+        subcontent: [
+
         ]
       }
     ],
@@ -82,8 +100,56 @@ export const projects: ProjectDescription[] = [
     },
     contributors: [
       {
-        name: 'Preston Sia',
-        url: ''
+        name: 'Celestin Ryf (celestinryf)',
+        url: 'https://github.com/celestinryf'
+      },
+      {
+        name: 'Anthony Naydyuk (antnay)',
+        url: 'https://github.com/antnay'
+      },
+      {
+        name: 'Matthew Franchini (matchewf11)',
+        url: 'https://github.com/matchewf11'
+      },
+      {
+        name: 'Preston Sia (presia27)',
+        url: 'https://github.com/presia27/'
+      },
+      {
+        name: 'Austin Nguyen (ASTN-NGYN)',
+        url: 'https://github.com/ASTN-NGYN'
+      },
+      {
+        name: 'Selly Beyene (SellyB-lionesscub7)',
+        url: 'https://github.com/SellyB-lionesscub7'
+      },
+      {
+        name: 'Nick Jordan (NickJordan-BE)',
+        url: 'https://github.com/NickJordan-BE'
+      },
+      {
+        name: 'Chris Pihlman (Chris5605)',
+        url: 'https://github.com/Chris5605'
+      },
+      {
+        name: 'Fernando Olivar Neri (Feekly)',
+        url: 'https://github.com/Feekly'
+      },
+      {
+        name: 'Felix Kiama (felixkiama77)',
+        url: 'https://github.com/felixkiama77'
+      },
+      {
+        name: 'Caleb Ernst (calebaernst)',
+        url: 'https://github.com/calebaernst'
+      },
+      {
+        name: 'sla-y-er',
+        url: 'https://github.com/sla-y-er'
+      },
+      {
+        name: 'Adin Smith (smithad26)',
+        url: 'https://github.com/smithad26'
       }
     ]
   },
@@ -124,6 +190,13 @@ export const projects: ProjectDescription[] = [
           { type: 'listpoint', heading: 'Details for verification', content: 'Show details for those who want it with the location name and live traffic camera image for verification.' },
           { type: 'listpoint', heading: 'Live updates', content: 'Update every minute or faster to bring users the latest information without overwhelming the APIs provided by local DOTs.' }
         ]
+      },
+      {
+        section: 'Results',
+        title: 'A quick, convenient solution for checking up on the status of movable bridges',
+        description: 'I don\'t suspect that there\'s been much use by other people other than myself. Personally, the app has been quite useful when I\'m in a car with other people going over one of Seattle\'s draw bridges. It just takes a minute for the free tier services to warm up.',
+        subcontent: [
+        ]
       }
     ],
     images: {
@@ -135,6 +208,161 @@ export const projects: ProjectDescription[] = [
       {
         name: 'Preston Sia (presia27)',
         url: 'https://github.com/presia27/'
+      }
+    ]
+  },
+
+  {
+    id: 7,
+    featured: false,
+    title: 'DungeonAdventure',
+    role: 'Java Developer',
+    association: 'University course project',
+    client: null,
+    stack: ['Java', 'JavaFX'],
+    startDate: '2025-04-01',
+    endDate: '2025-06-14',
+    projectPage: 'https://github.com/presiauw0/360team17DungeonAdventure',
+    liveSite: null,
+    synopsis: 'A rogue-like dungeon-themed game written in Java',
+    longDescription: 'Run through a procedurally-generated maze, picking up loot and fighting monsters to reach the exit.',
+    contributions: [
+      'Implemented the maze generation system using a recursive depth-first search algorithm and factory pattern.',
+      'Made the front end for viewing dungeon "rooms" using the observer design pattern.',
+      'Emphasized and reviewed group work for defensive coding practices.'
+    ],
+    images: {
+      cardImage: "#",
+      bannerImage: "#",
+      gallery: []
+    },
+    contributors: [
+      {
+        name: 'Preston Sia (presia27)',
+        url: 'https://github.com/presia27/'
+      },
+      {
+        name: 'Jonathan Hernandez (jhernandezzz)',
+        url: 'https://github.com/jhernandezzz'
+      },
+      {
+        name: 'Luke Willis (luke-willis)',
+        url: 'https://github.com/luke-willis'
+      }
+    ]
+  },
+
+  {
+    id: 6,
+    featured: false,
+    title: 'UMarket',
+    role: 'Front End Team Lead and Developer',
+    association: 'Tech Startup Club UW Tacoma',
+    client: 'Tech Startup Club UW Tacoma',
+    stack: ['TypeScript', 'React', 'Node.js'],
+    startDate: '2025-01-01',
+    endDate: '2025-05-01',
+    projectPage: 'https://github.com/TechStartupClub/UMarket',
+    liveSite: null,
+    synopsis: 'A marketplace and social media platform for UW students.',
+    longDescription: 'UMarket is a marketplace and social platform for UW students. From clothes and beds, to computers and pencils, whether you are moving out of your dorm, or you just need the extra cash, buy and sell on UMarket! Communicate and market your shop on the social media page, and buy and sell using the Market.',
+    contributions: [
+      'Design low-fidelity prototypes for the marketplace and social media features of the platform.',
+      'Ensure color pallets met WCAG contrast requirements.',
+      'Scaffold the main pages for the marketplace section of the site.',
+      'Work with the club president in the assignment of deliverables and code review.'
+    ],
+    pageDetails: [
+      {
+        section: 'Problem',
+        title: 'The closest platform related to student-focused social media is difficult to use. A marketplace system doesn\'t exist.',
+        description: 'The closest platform at UW Tacoma is a platform called "DUBNET" by 3rd party vendor CampusGroups. The DUBNET platform is seldom used outside of check-ins for events by student clubs. Many of our club members have found the interface difficult to use.',
+        subcontent: [
+          { type: 'listpoint', heading: 'Current solutions are unpopular', content: 'A social media system exists on the platform, but rarely sees use. Events used to be posted on DUBNET but are not commonly posted on the platform in recent years.' },
+          { type: 'listpoint', heading: 'Current solutions are hard to use', content: 'The multitude of menus make using the platform difficult to use.' }
+        ]
+      },
+      {
+        section: 'Goals',
+        title: 'Create a unified, intuitive platform for students to connect and buy/sell items',
+        description: 'A successful platform needs to be intuitive and easy to use. The cornerstones of this project were the social media and marketplace aspects fo the platform.',
+        subcontent: [
+          { type: 'listpoint', heading: 'Intuitive interface', content: 'The User Interface must be accessible and intuitive for all users.' },
+          { type: 'listpoint', heading: 'Marketplace', content: 'Provide an interactive marketplace for students to buy and sell items from each other in a simple and secure manner.' },
+          { type: 'listpoint', heading: 'Social media', content: 'Create a social media platform that people actually want to use' },
+          { type: 'listpoint', heading: 'Learning', content: 'With many new club members, this should also function as a learning opportunity to gain practice using React and TypeScript.' }
+        ]
+      },
+      {
+        section: 'Results',
+        title: 'A strong start and rough ending',
+        description: 'There was a lot of excitement around the project at the time after finishing up UWealth (out previous project). However, some rough patches in communication, productivity, and a shift in priorities taught some important lessons.',
+        subcontent: [
+          { type: 'listpoint', heading: 'Unclear objectives', content: 'There was a misunderstanding between different leads among whether the project was a "market-focused platform with social features" or a "social-focused platform with marketplace features." I and the other leads worked this out during the low-fidelity ideation and prototype phase. We\'ll be certain to all be on the same page next time.' },
+          { type: 'listpoint', heading: 'Limitations of being a club', content: 'Alas, since everyone is volunteering their time, development is sometimes subject to interruption by other priorities such as the intense midterm exams that many students (who were in the same class) needed to study for. This probably calls for better sprint planning that takes this into account.' },
+          { type: 'listpoint', heading: 'Playing catch-up', content: 'After returning during the spring to work on the project, we attempted to get everyone "up to speed" before moving on, involving the merging of partially completed features from the previous months. This likely hampered some of our progress by being hung up by other code. This again calls for better spring planning.' },
+          { type: 'listpoint', heading: 'Shift in priorities', content: 'For this project, the club itself was its own client. The stakes weren\'t particularly high, and once we were approached by our professors for a project proposal, our priorities shifted. This project was put on hold indefinitely.' },
+          { type: 'listpoint', heading: 'Learning experiences', content: 'This experience did teach us a lot about communication, drafting prototypes, and gaining a better understanding of the TypeScript which was new for a lot of people. We were able to take this knowledge into the SETlib project.' },
+        ]
+      }
+    ],
+    images: {
+      cardImage: "#",
+      bannerImage: "#",
+      gallery: []
+    },
+    contributors: [
+      {
+        name: 'Celestin Ryf (celestinryf)',
+        url: 'https://github.com/celestinryf'
+      },
+      {
+        name: 'Jacob Klymenko (jacobkly)',
+        url: 'https://github.com/jacobkly'
+      },
+      {
+        name: 'Preston Sia (presia27)',
+        url: 'https://github.com/presia27/'
+      },
+      {
+        name: 'Primitivo Bambao (abstracted)',
+        url: 'https://github.com/abstrcted'
+      },
+      {
+        name: 'Austin Nguyen (ASTN-NGYN)',
+        url: 'https://github.com/matchewf11'
+      },
+      {
+        name: 'Matthew Franchini (matchewf11)',
+        url: 'https://github.com/matchewf11'
+      },
+      {
+        name: 'Fernando Olivar Neri (feekly)',
+        url: 'https://github.com/Feekly'
+      },
+      {
+        name: 'Anthony Naydyuk (antnay)',
+        url: 'https://github.com/antnay'
+      },
+      {
+        name: 'Nick Jordan (njordanuw)',
+        url: 'https://github.com/NjordanUW'
+      },
+      {
+        name: 'Alex Yu (AlexY305)',
+        url: 'https://github.com/AlexY305'
+      },
+      {
+        name: 'James Escudero (jamesesc)',
+        url: 'https://github.com/jamesesc'
+      },
+      {
+        name: 'Caleb Ernst (calebaernst)',
+        url: 'https://github.com/calebaernst'
+      },
+      {
+        name: 'John Diego Menudo (diego-menudo)',
+        url: 'https://github.com/diego-menudo'
       }
     ]
   },
@@ -315,8 +543,8 @@ export const projects: ProjectDescription[] = [
       {
         section: 'Results',
         title: '',
+        description: 'Building on the previous system, the new schema allows for different JSON object \"types\" such as headings, sections, and list entries. This results in a schema that is a lot more flexible and allows sections to be nested multiple times if desired. The rendering of these nested section involves a recursive search algorithm. The front end allows you to see the document list as it would appear in PDFViewer and allows the user to drag items to change the ordering.',
         subcontent: [
-          { type: 'blocktext', content: 'Building on the previous system, the new schema allows for different JSON object \"types\" such as headings, sections, and list entries. This results in a schema that is a lot more flexible and allows sections to be nested multiple times if desired. The rendering of these nested section involves a recursive search algorithm. The front end allows you to see the document list as it would appear in PDFViewer and allows the user to drag items to change the ordering.' }
         ]
       }
     ],
@@ -390,8 +618,8 @@ export const projects: ProjectDescription[] = [
     pageDetails: [
       {
         section: 'Problem',
-        title: 'Subject to several constraints, a browser-based platform that simply focused on displaying PDF documents in the browser and providing an \"index\" of documents to click and open from a sidebar was desired.',
-        description: 'While electronic signage exists on some roads, it can be easy to miss some of the signage unless you know where to look. Some roads lack electronic signage leading up to some of these bridges. Many commuters find themselves stuck waiting for the bridge to open and close and are too far from the nearest street or exit to use an alternate route.',
+        title: 'A simple, front-end only solution for organizing office documents was needed.',
+        description: 'Subject to several constraints, a browser-based platform that simply focused on displaying PDF documents in the browser and providing an "index" of documents to click and open from a sidebar was desired.',
         subcontent: [
           { type: 'listpoint', heading: 'No IT Access', content: 'Must be compatible running in Microsoft SharePoint server used as a simple HTTP server for the purposes of such a solution. No back end access is provided, and no back end code can be used.' },
           { type: 'listpoint', heading: 'Ease of use', content: 'Non-technical users must be able to use and edit this index.' },
