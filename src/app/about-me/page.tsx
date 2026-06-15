@@ -2,7 +2,7 @@
 
 export default function AboutPage() {
   return(
-    <main className="contentMargins mt-32">
+    <main id="content" tabIndex={-1} className="contentMargins mt-32">
       <section>
         <h1 className="bigHeader">About Me</h1>
         <div className="grid grid-cols-2 gap-24">

@@ -17,7 +17,7 @@ export default function DetailsPage() {
   const projectData = projectFilter[0];
   
   return (
-    <main className="mt-32">
+    <main id="content" tabIndex={-1} className="mt-32">
       <article>
         <div className="contentMargins">
           <h1 className="bigHeader">{projectData.title}</h1>

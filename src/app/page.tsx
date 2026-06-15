@@ -2,7 +2,7 @@ import { FeaturedProjects } from "@/components/featuredProjects/FeaturedProjects
 
 export default function Home() {
   return (
-    <main className="contentMargins mt-32">
+    <main id="content" tabIndex={-1} className="contentMargins mt-32">
       <section className="flex flex-row justify-between pb-20">
         <div>
           <h1 className="bigHeader">Hi There!</h1>

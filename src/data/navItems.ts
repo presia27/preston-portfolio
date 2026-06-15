@@ -12,7 +12,6 @@ export const navLinks: NavLink[] = [
     title: 'Software & Design',
     type: 'item',
     url: '/software',
-    arialabel: 'Software and Design'
   },
   {
     id: 'gis',

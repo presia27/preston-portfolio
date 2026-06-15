@@ -13,7 +13,7 @@ function ProjectListLoader() {
 
 export default function SoftwarePage() {
   return (
-    <main className="contentMargins mt-32">
+    <main id="content" tabIndex={-1} className="contentMargins mt-32">
       <h1 className="bigHeader">Software &amp; Design Portfolio</h1>
       <section>
         <ProjectListLoader></ProjectListLoader>
