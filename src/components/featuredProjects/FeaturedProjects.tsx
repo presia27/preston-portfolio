@@ -19,7 +19,7 @@ export function FeaturedProjects() {
             <div className='basis-[40%]'>
               <a href={`/software/${project.id}`} className='hover:underline' aria-labelledby={`projTitle${project.id}`}>
                 <h3 className='font-semibold text-2xl' id={`projTitle${project.id}`}>{project.title}</h3>
-                <h4 className='italic mb-2'>{project.role} | {project.association}</h4>
+                <div className='italic mb-2'>{project.role} | {project.association}</div>
                 <p className='mt-1 mb-1'>{project.synopsis}</p>
               </a>
             </div>

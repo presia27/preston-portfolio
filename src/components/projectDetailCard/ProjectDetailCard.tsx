@@ -21,9 +21,11 @@ export function ProjectDetailCard({project}: IProjectDetailCard) {
         
       </div>
       <div className='basis-[40%]'>
-        <h3 className='font-semibold text-2xl'>{project.title}</h3>
-        <h4 className='italic mb-2'>{project.role} | {project.association}</h4>
-        <p className='mt-1 mb-1'>{project.synopsis}</p>
+        <a href={`/software/${project.id}`} className='hover:underline' aria-labelledby={`projTitle${project.id}`}>
+          <h2 className='font-semibold text-2xl' id={`projTitle${project.id}`}>{project.title}</h2>
+          <div className='italic mb-2'>{project.role} | {project.association}</div>
+          <p className='mt-1 mb-1'>{project.synopsis}</p>
+        </a>
       </div>
       <div className='grid grid-rows-[2fr_1fr]'>
         <div className='flex gap-1 flex-wrap items-start'>

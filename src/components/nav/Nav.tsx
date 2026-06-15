@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Nav() {
   return (
-    <nav className="bg-accent-lighter/95 accentShadow">
+    <nav className="bg-accent-lighter/95 accentShadow" aria-label="Main Navigation">
       <div className="contentMargins flex flex-row justify-between gap-2">
         <div className="content-center">
           <Link href="/">
