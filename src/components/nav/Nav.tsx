@@ -6,7 +6,7 @@ export function Nav() {
     <nav className="bg-accent-lighter/95 accentShadow" aria-label="Main Navigation">
       <div className="contentMargins flex flex-row justify-between gap-2">
         <div className="content-center">
-          <Link href="/">
+          <Link href="/" aria-label="Go to Home Page">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/PSiaProfileGraphic.png"
