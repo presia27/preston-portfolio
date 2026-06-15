@@ -528,7 +528,7 @@ export const projects: ProjectDescription[] = [
 
   {
     id: 3,
-    featured: false,
+    featured: true,
     title: 'jNav',
     role: 'Front End Web Developer',
     association: 'Personal Project',
@@ -538,8 +538,8 @@ export const projects: ProjectDescription[] = [
     endDate: '2024-07-02',
     projectPage: 'https://github.com/presia27/jNav',
     liveSite: 'https://presia27.github.io/demos/jNav/v1.0.0/console/index.html',
-    synopsis: 'A tool to create and store links in JSON format which can be loaded into a webpage and used to build site navigation tools. This project also defines a JSON structure for storing the information.',
-    longDescription: 'A full-stack project that shows when Seattle\'s moveable bridges are up for boat traffic.Users can view traffic camera images or view a summary of all bridges during their commute.',
+    synopsis: 'Build web navigation sections in JSON using this WYSIWYG editor.',
+    longDescription: 'A tool to create and store links in JSON format which can be loaded into a webpage and used to build site navigation tools. This project also defines a JSON structure for storing the information.',
     contributions: [
       'Create a JSON schema for storing sections and records of links to documents, webpages, and other resources.',
       'Create a WYSIWYG editor in HTML, JavaScript, and jQuery to allow easy editing by non-technical users.'
