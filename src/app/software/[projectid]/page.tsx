@@ -50,6 +50,26 @@ export default function DetailsPage() {
                 }
               </div>
             </div>
+            <div>
+              <div>Project Link:</div>
+              <div>
+                {projectData.projectPage !== null ? (
+                  <a href={projectData.projectPage} className="link" target="_blank">
+                    {projectData.projectPage}
+                  </a>
+                ) : <>Not Available</>}
+              </div>
+            </div>
+            <div>
+              <div>Live Demo:</div>
+              <div>
+                {projectData.liveSite !== null ? (
+                  <a href={projectData.liveSite} className="link" target="_blank">
+                    {projectData.liveSite}
+                  </a>
+                ): <>Not Available</>}
+              </div>
+            </div>
           </div>
 
           <div className='flex gap-1 flex-wrap items-start mt-8'>
@@ -75,7 +95,7 @@ export default function DetailsPage() {
         </section>
 
         { projectData.pageDetails !== undefined ? projectData.pageDetails.map((section) => (
-          <section className="contentMargins mt-8" key={section.section}>
+          <section className="contentMargins mt-8 md:max-w-[60vw]" key={section.section}>
             <h2 className="smallHeader">{section.section}</h2>
             <h3 className="bigHeader2">{section.title}</h3>
             <p>
@@ -84,7 +104,10 @@ export default function DetailsPage() {
 
             <ul className="bulletList mt-2">
               { section.subcontent && section.subcontent.map((content) => (
-                <li key={content.content.length}>
+                <li
+                  key={content.content.length}
+                  className={content.type === 'listpoint' ? 'list-item' : 'list-none'}
+                >
                   {content.type === "listpoint" && (
                     <>
                       <span className="font-bold">{content.heading}: </span>

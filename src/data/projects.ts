@@ -33,10 +33,17 @@ interface DetailsSubcontent {
   content: string; // text for listpoint, URL for image
 }
 
+interface ImageData {
+  url: string;
+  altText: string;
+  width?: string;
+  height?: string;
+}
+
 interface ProjectImages {
-  cardImage: string;
-  bannerImage: string;
-  gallery: string[];
+  cardImage: string; // alt text inserted programatically
+  bannerImage: ImageData;
+  gallery: ImageData[];
 }
 
 interface ContributorSection {
@@ -95,7 +102,10 @@ export const projects: ProjectDescription[] = [
     ],
     images: {
       cardImage: "#",
-      bannerImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
       gallery: []
     },
     contributors: [
@@ -167,7 +177,7 @@ export const projects: ProjectDescription[] = [
     projectPage: 'https://github.com/presia27/IsTheBridgeUp',
     liveSite: 'https://isthebridgeup.vercel.app',
     synopsis: 'Displays the status of Seattle\'s movable highway bridges',
-    longDescription: 'A full-stack project that shows when Seattle\'s moveable bridges are up for boat traffic.Users can view traffic camera images or view a summary of all bridges during their commute.',
+    longDescription: 'A full-stack project that shows when Seattle\'s moveable bridges are up for boat traffic. Users can view traffic camera images or view a summary of all bridges during their commute.',
     contributions: [
       'Developed a full-stack web application to show real-time data on Seattle\'s movable bridge openings.',
       'Designed a lightweight database for storing bridge and traffic image data, deployed the app to Vercel and the database to Supabase to practice cloud deployment workflows'
@@ -201,7 +211,10 @@ export const projects: ProjectDescription[] = [
     ],
     images: {
       cardImage: "isthebridgeup_card.png",
-      bannerImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
       gallery: []
     },
     contributors: [
@@ -233,7 +246,10 @@ export const projects: ProjectDescription[] = [
     ],
     images: {
       cardImage: "#",
-      bannerImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
       gallery: []
     },
     contributors: [
@@ -308,7 +324,10 @@ export const projects: ProjectDescription[] = [
     ],
     images: {
       cardImage: "#",
-      bannerImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
       gallery: []
     },
     contributors: [
@@ -418,7 +437,10 @@ export const projects: ProjectDescription[] = [
     ],
     images: {
       cardImage: "#",
-      bannerImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
       gallery: []
     },
     contributors: [
@@ -478,7 +500,10 @@ export const projects: ProjectDescription[] = [
     ],
     images: {
       cardImage: "#",
-      bannerImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
       gallery: []
     },
     contributors: [
@@ -550,7 +575,10 @@ export const projects: ProjectDescription[] = [
     ],
     images: {
       cardImage: "#",
-      bannerImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
       gallery: []
     },
     contributors: [
@@ -582,7 +610,10 @@ export const projects: ProjectDescription[] = [
     ],
     images: {
       cardImage: "#",
-      bannerImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
       gallery: []
     },
     contributors: [
@@ -648,7 +679,10 @@ export const projects: ProjectDescription[] = [
     ],
     images: {
       cardImage: "#",
-      bannerImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
       gallery: []
     },
     contributors: [
