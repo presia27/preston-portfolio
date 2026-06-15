@@ -1,4 +1,11 @@
 import { FeaturedProjects } from "@/components/featuredProjects/FeaturedProjects";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Preston Sia - Home'
+  }
+}
 
 export default function Home() {
   return (

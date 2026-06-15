@@ -10,7 +10,10 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Preston Sia",
+  title: {
+    template: '%s - Preston Sia',
+    default: 'Preston Sia'
+  },
   description: "Seattle-area developer",
 };
 

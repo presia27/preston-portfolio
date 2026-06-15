@@ -1,15 +1,22 @@
-'use client';
-
-import { notFound, useParams } from "next/navigation";
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { projects } from "../../../data/projects";
 import dayjs from "dayjs";
 
-export default function DetailsPage() {
-  const params = useParams();
+export async function generateMetadata({ params }: { params: Promise<{ projectid: string }> }): Promise<Metadata> {
+  const { projectid } = await params;
+  const project = projects.find((p) => p.id === Number(projectid))
+  return {
+    title: project?.title ?? 'Project',
+  }
+}
 
-  if (!params) return;
-  //console.log(params.projectid);
-  const projectFilter = projects.filter((project) => project.id === Number(params.projectid))
+export default async function DetailsPage({ params }: { params: Promise<{ projectid: string }>}) {
+  const { projectid } = await params; 
+  console.log(projectid);
+
+  if (!projectid) return;
+  const projectFilter = projects.filter((project) => project.id === Number(projectid))
   if (projectFilter.length < 1) {
     notFound()
   }

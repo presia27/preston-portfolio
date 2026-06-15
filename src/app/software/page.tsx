@@ -1,5 +1,10 @@
-import { ProjectDetailCard } from '@/components/projectDetailCard/ProjectDetailCard';
+import { ProjectDetailCard } from '../../components/projectDetailCard/ProjectDetailCard';
 import { projects } from '../../data/projects';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Software and Design Portfolio'
+}
 
 function ProjectListLoader() {
   return(
