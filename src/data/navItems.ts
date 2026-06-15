@@ -3,6 +3,7 @@ export interface NavLink {
   title: string;
   type: 'item' | 'group';
   url: string;
+  arialabel?: string;
 }
 
 export const navLinks: NavLink[] = [
@@ -10,13 +11,15 @@ export const navLinks: NavLink[] = [
     id: 'software',
     title: 'Software & Design',
     type: 'item',
-    url: '/software'
+    url: '/software',
+    arialabel: 'Software and Design'
   },
   {
     id: 'gis',
     title: 'GIS',
     type: 'item',
-    url: '/gis'
+    url: '/gis',
+    arialabel: 'G I S'
   },
   {
     id: 'photography',

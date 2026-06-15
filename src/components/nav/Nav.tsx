@@ -24,6 +24,7 @@ export function Nav() {
               key={item.id}
               href={item.url}
               className="hover:underline p-2"
+              aria-label={item.arialabel ?? item.title}
             >
               {item.title}
             </Link>
