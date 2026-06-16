@@ -9,8 +9,8 @@ export default function AboutPage() {
     <main id="content" tabIndex={-1} className="contentMargins mt-32">
       <section>
         <h1 className="bigHeader">About Me</h1>
-        <div className="grid grid-cols-2 gap-24">
-          <div>
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-24">
+          <div className="order-2 sm:order-1">
             <p>
               My name is Preston, and I&apos;m a student at the
               University of Washington Tacoma with a background in
@@ -32,7 +32,7 @@ export default function AboutPage() {
               cycling, photography, and exploring cities on public transit.
             </p>
           </div>
-          <div>
+          <div className="order-1 sm:order-2">
             <figure className="max-w-87.5 h-auto">
               <img
                 src="/psportrait_2026_crop.jpg"

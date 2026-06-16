@@ -90,7 +90,7 @@ export default async function DetailsPage({ params }: { params: Promise<{ projec
         </section>
 
         <section className="bg-accent-main mt-8">
-          <div className="contentMargins pt-8 pb-8 w-[70vw]">
+          <div className="contentMargins pt-8 pb-8 md:w-[70vw]">
             <h2 className="smallHeader">Contributions</h2>
             <ul className="bulletList">
               {projectData.contributions.map((contrib) => (
@@ -129,7 +129,7 @@ export default async function DetailsPage({ params }: { params: Promise<{ projec
           </section>
         )) : <></> }
 
-        <section className="contentMargins mt-8">
+        <section className="contentMargins mt-8  md:max-w-[60vw]">
           <h2 className="smallHeader">Contributors</h2>
           <ul className="bulletList">
             {projectData.contributors.map((contributor) => (
