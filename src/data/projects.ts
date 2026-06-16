@@ -53,7 +53,7 @@ interface ContributorSection {
 
 export const projects: ProjectDescription[] = [
   {
-    id: 9,
+    id: 10,
     featured: true,
     title: 'SETLib',
     role: 'Front End Team Lead and Developer',
@@ -165,7 +165,7 @@ export const projects: ProjectDescription[] = [
   },
 
   {
-    id: 8,
+    id: 9,
     featured: true,
     title: 'Is The Bridge Up?',
     role: 'Full Stack Web Developer',
@@ -226,7 +226,7 @@ export const projects: ProjectDescription[] = [
   },
 
   {
-    id: 7,
+    id: 8,
     featured: false,
     title: 'DungeonAdventure',
     role: 'Java Developer',
@@ -269,7 +269,7 @@ export const projects: ProjectDescription[] = [
   },
 
   {
-    id: 6,
+    id: 7,
     featured: false,
     title: 'UMarket',
     role: 'Front End Team Lead and Developer',
@@ -387,7 +387,7 @@ export const projects: ProjectDescription[] = [
   },
 
   {
-    id: 5,
+    id: 6,
     featured: false,
     title: 'UWealth',
     role: 'Front End Web Developer',
@@ -480,7 +480,7 @@ export const projects: ProjectDescription[] = [
   },
 
   {
-    id: 4,
+    id: 5,
     featured: false,
     title: 'Tetris Clone',
     role: 'Java Developer',
@@ -522,6 +522,78 @@ export const projects: ProjectDescription[] = [
       {
         name: 'Abdulrahman Hassan (ahhassan1)',
         url: 'https://github.com/ahhassan1'
+      }
+    ]
+  },
+
+  {
+    id: 4,
+    featured: false,
+    title: 'IRIZE',
+    role: 'Front End Web Developer',
+    association: 'Freelance',
+    client: 'IRIZE RSO',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    startDate: '2024-06-01',
+    endDate: '2024-09-01',
+    projectPage: null,
+    liveSite: 'https://feekly.github.io/feekly.github.io-irize/irize/',
+    synopsis: 'Site design for the IRIZE student organization at UW Tacoma',
+    longDescription: 'Site design for the IRIZE student organization to help connect students with resources related to menstrual hygiene.',
+    contributions: [
+      'Created low-fidelity mock-ups based on descriptions given by the organization.',
+      'Created a digital mock-up in HTML with information on resources and a page to obtain products.'
+    ],
+    pageDetails: [
+      {
+        section: 'Problem',
+        title: 'Existing stigma and costs make menstrual hygiene and health products difficult to access',
+        description: 'Prior to this project, the IRIZE student organization worked to expand access to free or low-cost menstrual products around the UW Tacoma campus. However, existing stigma and barriers around cost continue to be a challenge.',
+        subcontent: [
+          { type: 'listpoint', heading: 'Stigma', content: 'Existing stigma in society around menstrual health make open conversation about these issues difficult, and can prove to be an uphill battle when it comes to gaining institutional support.' },
+          { type: 'listpoint', heading: 'Cost', content: 'Menstrual products are not necessarily cheap, and these costs are often a major barrier to people.' }
+        ]
+      },
+      {
+        section: 'Goals',
+        title: 'Design a site to provide information and online orders.',
+        description: 'IRIZE wanted to make a site or mobile app focused on connecting students to information about menstrual health and a way to make it easier to order hygiene products.',
+        subcontent: [
+          { type: 'listpoint', heading: 'Information', content: 'Provide information to students via a website for people to learn about menstrual health and hygiene, as well as resources and advocacy information.' },
+          { type: 'listpoint', heading: 'Online Orders', content: 'In pursuit of making menstrual products easier to obtain, IRIZE wanted a site that makes it easy for people order free hygiene products.' }
+        ]
+      },
+      {
+        section: 'Design Response',
+        title: '',
+        description: 'My colleague Fernando and I went forward with a web-based design that was also mobile-friendly. We centered the landing page around 3 tasks: Learning/information, product orders, and advocacy (getting involved). ',
+        subcontent: [
+        ]
+      },
+      {
+        section: 'Results',
+        title: '',
+        description: 'The result of the design was well received by the IRIZE RSO president. Their distribution partner, a university resource known as The Pantry, was less interested in integrating another system into their workflow and expressed their intention to use survey forms for orders instead. Due to university club policies related to RSO governance, the IRIZE RSO was unable to continue operations due to a lack of members. As a result, this project never made it past the design phase.',
+        subcontent: [
+        ]
+      }
+    ],
+    images: {
+      cardImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
+      gallery: []
+    },
+    contributors: [
+      {
+        name: 'Fernando Olivar Neri (Feekly)',
+        url: 'https://github.com/Feekly'
+      },
+      {
+        name: 'Preston Sia (presia27)',
+        url: 'https://github.com/presia27/'
       }
     ]
   },

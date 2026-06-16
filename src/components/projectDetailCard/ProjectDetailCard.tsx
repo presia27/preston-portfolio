@@ -13,7 +13,7 @@ interface IProjectDetailCard {
 
 export function ProjectDetailCard({project}: IProjectDetailCard) {
   return (
-    <div key={project.id} className='flex gap-8 mb-6 min-h-36.25'>
+    <div key={project.id} className='flex gap-8 mb-8 min-h-36.25'>
       <div>
         {project.images.cardImage && project.images.cardImage !== '#' 
           ? <img src={"/cardimg/" + project.images.cardImage} alt={`Image featuring ${project.title}`} width="194" height="145" />

@@ -128,6 +128,21 @@ export default async function DetailsPage({ params }: { params: Promise<{ projec
             </ul>
           </section>
         )) : <></> }
+
+        <section className="contentMargins mt-8">
+          <h2 className="smallHeader">Contributors</h2>
+          <ul className="bulletList">
+            {projectData.contributors.map((contributor) => (
+              <li key={contributor.name}>
+                {
+                  contributor.url 
+                  ? <a href={contributor.url} className="link" target="_blank">{contributor.name}</a>
+                  : <>{contributor.name}</>
+                }
+              </li>
+            ))}
+          </ul>
+        </section>
       </article>
     </main>
   );

@@ -33,7 +33,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div>
-            <figure className="max-w-[350px] h-auto">
+            <figure className="max-w-87.5 h-auto">
               <img
                 src="/psportrait_2026_crop.jpg"
                 alt="Preston, standing at the bottom of a waterfall and rocky cliff at Little Mashel Falls near Eatonville"
