@@ -103,7 +103,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "#",
+      cardImage: "vrhomereno-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -168,7 +168,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "#",
+      cardImage: "projectrunner-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -353,7 +353,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "isthebridgeup_card.png",
+      cardImage: "isthebridgeup-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -722,7 +722,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "#",
+      cardImage: "irize-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -789,7 +789,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "#",
+      cardImage: "jnav-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -893,7 +893,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "#",
+      cardImage: "pdfviewer-card.png",
       bannerImage: {
         url: "#",
         altText: ""

@@ -12,8 +12,14 @@ export function FeaturedProjects() {
           <div key={project.id} className='flex gap-8 mb-6 min-h-36.25'>
             <div className='min-w-48.5'>
               {project.images.cardImage && project.images.cardImage !== '#' 
-                ? <img src={"/cardimg/" + project.images.cardImage} alt={`Image featuring ${project.title}`} width="194" height="145" />
-                : <div className='w-48.5 h-36.25 bg-accent-lighter border border-accent-darker rounded-4xl'></div>}
+              ? <img
+                  src={"/cardimg/" + project.images.cardImage}
+                  alt={`Image featuring ${project.title}`}
+                  className='rounded-2xl border border-accent-darker'
+                  width="194"
+                  height="145"
+                />
+              : <div className='w-48.5 h-36.25 bg-accent-lighter border border-accent-darker rounded-2xl'></div>}
               
             </div>
             <div className='basis-[40%]'>

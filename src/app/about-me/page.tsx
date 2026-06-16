@@ -47,7 +47,22 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section>
+      <section className="mt-8">
+        <h2 className="bigHeader2">Education</h2>
+        <div className="mb-4">
+          <div className="font-bold">University of Washington Tacoma</div>
+          <div>Bachelor of Arts in Urban Studies - GIS and Spatial Planning</div>
+          <div>Bachelor of Science in Computer Science and Systems</div>
+          <div>*Expected Graduation June 2027</div>
+        </div>
+        <div className="mb-4">
+          <div className="font-bold">Highline College</div>
+          <div>Associates in Arts</div>
+          <div>Graduated June 2023</div>
+        </div>
+      </section>
+
+      <section className="mt-8">
         <h2 className="bigHeader2">Contact</h2>
         Connect with me using the following methods:
         <ul>
@@ -57,8 +72,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <br /><br />
-      <section>
+      <section className="mt-8">
         <h2 className="bigHeader2">Accessibility</h2>
         <p>
           It is essential to ensure that interfaces are accessible to all users in our communities, whether it&apos;s
