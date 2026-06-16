@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { projects } from "../../../data/projects";
 import dayjs from "dayjs";
+import { ArrowSquareOutIcon } from "@phosphor-icons/react/ssr";
 
 export async function generateMetadata({ params }: { params: Promise<{ projectid: string }> }): Promise<Metadata> {
   const { projectid } = await params;
@@ -61,7 +62,7 @@ export default async function DetailsPage({ params }: { params: Promise<{ projec
               <div>
                 {projectData.projectPage !== null ? (
                   <a href={projectData.projectPage} className="link" target="_blank">
-                    {projectData.projectPage}
+                    {projectData.projectPage} <ArrowSquareOutIcon />
                   </a>
                 ) : <>Not Available</>}
               </div>
@@ -71,7 +72,7 @@ export default async function DetailsPage({ params }: { params: Promise<{ projec
               <div>
                 {projectData.liveSite !== null ? (
                   <a href={projectData.liveSite} className="link" target="_blank">
-                    {projectData.liveSite}
+                    {projectData.liveSite} <ArrowSquareOutIcon />
                   </a>
                 ): <>Not Available</>}
               </div>
