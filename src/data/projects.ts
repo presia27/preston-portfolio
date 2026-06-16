@@ -53,6 +53,149 @@ interface ContributorSection {
 
 export const projects: ProjectDescription[] = [
   {
+    id: 12,
+    featured: false,
+    title: 'VR Home Renovation',
+    role: 'UX/UI Designer',
+    association: 'University Course Project',
+    client: null,
+    stack: ['Figma', 'Paper Prototypes', 'Interviews', 'Heuristic Evaluations'],
+    startDate: '2026-04-06',
+    endDate: '2026-06-01',
+    projectPage: null,
+    liveSite: 'https://www.figma.com/proto/CaPbiaGLrkmT9wSzFyFCVL/Mangosteen_DigitalPrototypes?node-id=0-1&t=t4V8OHYidpGoMYjJ-1',
+    synopsis: 'A design for a VR-based home renovation app for moving and changing furniture, layouts, and colors.',
+    longDescription: 'Traditional tools for home renovation often lack the ability for users to gain a true sense of scale of their proposed design. My group and I sought to design a VR-based solution to provide users with a better sense of scale for their home renovation projects.',
+    contributions: [
+      'Organized meetings and coordinated the timely completion of team tasks.',
+      'Wrote interview solicitation scripts, drafted questions to ask interview participants.'
+    ],
+    pageDetails: [
+      {
+        section: 'Problem',
+        title: 'Traditional solutions lack a true sense of scale',
+        description: 'Many of our interviewees noted misjudging how much space was actually needed in many of their projects.',
+        subcontent: [
+
+        ]
+      },
+      {
+        section: 'Goals',
+        title: 'Design a VR solution for users to design and explore home renovation plans in an immersed fashion',
+        description: 'Our goal included a VR-focused design covering the following tasks',
+        subcontent: [
+          { type: 'listpoint', heading: 'Learning/Tutorial', content: 'Show users how the controls work for the app and how to perform core tasks' },
+          { type: 'listpoint', heading: 'Manipulate', content: 'Allow users to add new objects to a space or change existing ones' },
+          { type: 'listpoint', heading: 'Measure', content: 'Allow users to measure room dimensions and furniture to evaluate whether design layouts meet spatial requirements.' },
+          { type: 'listpoint', heading: 'Import/Export', content: 'Allow users to use existing CAD models or export them for sharing/modification in separate software.' },
+          { type: 'listpoint', heading: 'Compare', content: 'Compare different versions of room designs and allow comparisons between different designs.' }
+          
+        ]
+      },
+      {
+        section: 'Design and Insights',
+        title: '',
+        description: '',
+        subcontent: [
+          { type: 'listpoint', heading: 'From desktops to VR', content: 'Our first iteration was controller based on used sidebars for controls, analogous to desktop applications. As we learned about VR best practices, we moved our sidebar elements from the edges to the inside of the screen so they would be visible.' },
+          { type: 'listpoint', heading: 'Feedback response', content: 'In response to user feedback, we simplified some of the buttons that, at the time, weren\'t functional and condensed the UI into just a few large buttons to de-clutter the screen.' }
+        ]
+      }
+    ],
+    images: {
+      cardImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
+      gallery: []
+    },
+    contributors: [
+      {
+        name: 'Preston Sia',
+        url: ''
+      },
+      {
+        name: 'Luke Willis',
+        url: ''
+      },
+      {
+        name: 'Victor Tang',
+        url: ''
+      },
+      {
+        name: 'Patrick Quaidoo',
+        url: ''
+      },
+      {
+        name: 'Jonathan Hernandez',
+        url: ''
+      },
+      {
+        name: 'Shiannel Maningat',
+        url: ''
+      }
+    ]
+  },
+
+  {
+    id: 11,
+    featured: true,
+    title: 'PROJECT RUNNER',
+    role: 'Web Game Developer',
+    association: 'PLEP Developers',
+    client: 'Independent Project',
+    stack: ['TypeScript'],
+    startDate: '2026-01-05',
+    endDate: '2026-03-15',
+    projectPage: 'https://github.com/presia27/plep-game-2026',
+    liveSite: 'https://presia27.github.io/plep-game-2026/publishweb',
+    synopsis: 'A top-down action-horror game with a simple objective: Collect and deliver items on time or relinquish your soul.',
+    longDescription: 'It\'s the year 2167. You work for a megacorporation with advanced technology to transport your soul into an expendable husk. Your objective is simple. Collect and deliver items on time or relinquish your soul forever.',
+    contributions: [
+      'Setup the repository with TypeScript tooling to enable development with TypeScript, reducing issues with JavaScript types.',
+      'Developed features to manage the order delivery loop and inventory management.',
+      'Implemented the observer pattern so that the order, inventory, and boss satisfaction systems could talk to each other.',
+      'Built an event system for the game to change levels and end (win/lose).'
+    ],
+    pageDetails: [
+      {
+        section: 'Results and Remarks',
+        title: '',
+        description: 'It took a while to get some of the development moving. Many of my peers were new to TypeScript. However, the game after completion proved to be quite popular among many of our friends and colleagues. I enjoyed developing this game and hope you enjoy playing it. Additionally, I would like to shout out my colleague Emma on drawing all of the AMAZING artwork! Her artwork made this game truly beautiful.',
+        subcontent: [
+        ]
+      }
+    ],
+    images: {
+      cardImage: "#",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
+      gallery: []
+    },
+    contributors: [
+      {
+        name: 'Preston Sia (presia27)',
+        url: 'https://github.com/presia27/'
+      },
+      {
+        name: 'Emma Szebenyi (eszeb)',
+        url: 'https://github.com/eszeb'
+      },
+      {
+        name: 'Luke Willis (luke-willis)',
+        url: 'https://github.com/luke-willis'
+      },
+      {
+        name: 'Primitivo Bambao (abstrcted)',
+        url: 'https://github.com/abstrcted'
+      }
+    ]
+  },
+
+  {
     id: 10,
     featured: true,
     title: 'SETLib',
