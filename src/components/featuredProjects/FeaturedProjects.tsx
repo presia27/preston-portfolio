@@ -9,7 +9,7 @@ export function FeaturedProjects() {
     <div>
       {featuredProjects.map((project) => (
         
-          <div key={project.id} className='flex gap-8 mb-6 min-h-36.25'>
+          <div key={project.id} className='flex flex-col md:flex-row gap-2 md:gap-8 mb-12 md:mb-6 min-h-36.25'>
             <div className='min-w-48.5'>
               {project.images.cardImage && project.images.cardImage !== '#' 
               ? <img
@@ -24,7 +24,7 @@ export function FeaturedProjects() {
             </div>
             <div className='basis-[40%]'>
               <a href={`/software/${project.id}`} className='hover:underline' aria-labelledby={`projTitle${project.id}`}>
-                <h3 className='font-semibold text-2xl' id={`projTitle${project.id}`}>{project.title}</h3>
+                <h3 className='font-semibold text-2xl underline md:no-underline' id={`projTitle${project.id}`}>{project.title}</h3>
                 <div className='italic mb-2'>{project.role} | {project.association}</div>
                 <p className='mt-1 mb-1'>{project.synopsis}</p>
               </a>
