@@ -62,7 +62,7 @@ export default async function DetailsPage({ params }: { params: Promise<{ projec
               <div>
                 {projectData.projectPage !== null ? (
                   <a href={projectData.projectPage} className="link" target="_blank">
-                    {projectData.projectPage} <ArrowSquareOutIcon />
+                    {projectData.projectPage} <ArrowSquareOutIcon alt="Opens in new tab" />
                   </a>
                 ) : <>Not Available</>}
               </div>
@@ -72,7 +72,7 @@ export default async function DetailsPage({ params }: { params: Promise<{ projec
               <div>
                 {projectData.liveSite !== null ? (
                   <a href={projectData.liveSite} className="link" target="_blank">
-                    {projectData.liveSite} <ArrowSquareOutIcon />
+                    {projectData.liveSite} <ArrowSquareOutIcon alt="Opens in new tab" />
                   </a>
                 ): <>Not Available</>}
               </div>
@@ -104,7 +104,7 @@ export default async function DetailsPage({ params }: { params: Promise<{ projec
         { projectData.pageDetails !== undefined ? projectData.pageDetails.map((section) => (
           <section className="contentMargins mt-8 md:max-w-[60vw]" key={section.section}>
             <h2 className="smallHeader">{section.section}</h2>
-            <h3 className="bigHeader2">{section.title}</h3>
+            { section.title.length > 0 && <h3 className="bigHeader2">{section.title}</h3> }
             <p>
               {section.description}
             </p>
