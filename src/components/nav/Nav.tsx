@@ -27,7 +27,7 @@ export function Nav() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/PSiaProfileGraphic.png"
-                alt="Main Graphic"
+                alt="Main P Logo"
                 width="56"
                 height="56"
                 className="rounded-2xl"

@@ -14,7 +14,7 @@ export function FeaturedProjects() {
               {project.images.cardImage && project.images.cardImage !== '#' 
               ? <img
                   src={"/cardimg/" + project.images.cardImage}
-                  alt={`Image featuring ${project.title}`}
+                  alt={`Screenshot of ${project.title}`}
                   className='rounded-2xl border border-accent-darker'
                   width="194"
                   height="145"
