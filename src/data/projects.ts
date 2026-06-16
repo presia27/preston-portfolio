@@ -53,7 +53,7 @@ interface ContributorSection {
 
 export const projects: ProjectDescription[] = [
   {
-    id: 12,
+    id: 13,
     featured: false,
     title: 'VR Home Renovation',
     role: 'UX/UI Designer',
@@ -134,6 +134,73 @@ export const projects: ProjectDescription[] = [
       {
         name: 'Shiannel Maningat',
         url: ''
+      }
+    ]
+  },
+
+  {
+    id: 12,
+    featured: false,
+    title: 'UPlant',
+    role: 'Front End App Developer',
+    association: 'UHackathon 2026',
+    client: null,
+    stack: ['React Native/Expo', 'Python', 'TensorFlow'],
+    startDate: '2026-05-22',
+    endDate: '2026-05-23',
+    projectPage: 'https://github.com/cyberwiz0x/UPlant',
+    liveSite: null,
+    synopsis: 'A computer vision model to help plant owners identify plant health using their phone\'s camera.',
+    longDescription: 'For novice plant owners, diagnosing unhealth plants is not always easy, and generic internet advice is not always helpful for one person\'s specific situation. UPlant is a service and mobile app that uses machine learning and computer vision  to give a fast and accurate health diagnosis.',
+    contributions: [
+      'Assisted with ideation and organized project requirements.',
+      'Implemented front end features for capturing and uploading images for analysis by users.'
+    ],
+    pageDetails: [
+      {
+        section: 'Problem',
+        title: 'Novice owners struggle with plants',
+        description: 'Some plant owners might not recognize when their plant is in distress or what to do about it.',
+        subcontent: [
+        ]
+      },
+      {
+        section: 'Goals',
+        title: 'Mobile-based plant health assistance using computer vision',
+        description: 'Using a mobile app for ease of use and camera access, our team worked to create a machine learning model trained on common house plant to detect plant health issues and report tips based on those issues to users.',
+        subcontent: [
+          { type: 'listpoint', heading: 'Machine Learning', content: 'Using Tensorflow and MobileNetV2, we are able to quickly identify plants and plant health issues.' },
+          { type: 'listpoint', heading: 'Plant Tracking', content: 'Users can take or upload a photo of their plant over time to track its health.' }
+        ]
+      },
+      {
+        section: 'Results',
+        title: 'Accurate classification with room to grow',
+        description: 'With enough training data on a few species of plants, we were able to achieve a fairly good rate of accuracy on plant condition. From there the app is able to report some strategies for better plant care, but these reports are still fairly basic. In our team\'s hackathon submission, we received 4th place in the experimental projects pipeline.',
+        subcontent: [
+        ]
+      }
+    ],
+    images: {
+      cardImage: "uplant-card.png",
+      bannerImage: {
+        url: "#",
+        altText: ""
+      },
+      gallery: []
+    },
+    contributors: [
+      {
+        name: 'Primitivo Bambao (abstrcted)',
+        url: 'https://github.com/abstrcted'
+      },
+      {
+        name: 'Mahri Yalkapova (cyberwiz)',
+        url: 'https://github.com/cyberwiz0x'
+      },
+      {
+        name: 'Preston Sia (presia27)',
+        url: 'https://github.com/presia27/'
       }
     ]
   },
@@ -244,7 +311,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "#",
+      cardImage: "setlib-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -388,7 +455,7 @@ export const projects: ProjectDescription[] = [
       'Emphasized and reviewed group work for defensive coding practices.'
     ],
     images: {
-      cardImage: "#",
+      cardImage: "dungeonadventure-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -466,7 +533,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "#",
+      cardImage: "umarket-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -579,7 +646,7 @@ export const projects: ProjectDescription[] = [
       }
     ],
     images: {
-      cardImage: "#",
+      cardImage: "uwealth-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -618,6 +685,10 @@ export const projects: ProjectDescription[] = [
       {
         name: 'Alex Yu (AlexY305)',
         url: 'https://github.com/AlexY305'
+      },
+      {
+        name: 'John Diego Menudo (diego-menudo)',
+        url: 'https://github.com/diego-menudo'
       }
     ]
   },
@@ -642,7 +713,7 @@ export const projects: ProjectDescription[] = [
       'Found and included the music used in the TETRIS game.'
     ],
     images: {
-      cardImage: "#",
+      cardImage: "tetrisclone-card.png",
       bannerImage: {
         url: "#",
         altText: ""
@@ -824,7 +895,7 @@ export const projects: ProjectDescription[] = [
       'Added an extra feature for the loading of character sprites.'
     ],
     images: {
-      cardImage: "#",
+      cardImage: "labyrinth-card.png",
       bannerImage: {
         url: "#",
         altText: ""
