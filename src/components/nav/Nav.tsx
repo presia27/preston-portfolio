@@ -73,28 +73,33 @@ export function Nav() {
         aria-hidden={!sidebarOpen}
         id="mobile-nav"
       >
-        <button
-          onClick={() => setSidebarOpen(false)}
-          className="p-4 text-xl hover:cursor-pointer"
-          aria-label="Close navigation menu"
-          tabIndex={sidebarOpen ? 0 : -1}
-        >
-          <XIcon alt="Close Icon" size={24} />
-        </button>
-        <nav className="flex flex-col gap-2 p-4">
-          {navLinks.map((item) => (
-            <Link
-              key={item.id}
-              href={item.url}
-              className="hover:underline p-2"
-              aria-label={item.arialabel ?? item.title}
+        <div className="flex flex-col h-full">
+          <div>
+            <button
               onClick={() => setSidebarOpen(false)}
+              className="p-4 text-xl shrink-0 hover:cursor-pointer"
+              aria-label="Close navigation menu"
               tabIndex={sidebarOpen ? 0 : -1}
             >
-              {item.title}
-            </Link>
-          ))}
-        </nav>
+              <XIcon alt="Close Icon" size={24} />
+            </button>
+          </div>
+
+          <nav className="flex flex-col gap-2 p-4 overflow-y-auto">
+            {navLinks.map((item) => (
+              <Link
+                key={item.id}
+                href={item.url}
+                className="hover:underline p-2"
+                aria-label={item.arialabel ?? item.title}
+                onClick={() => setSidebarOpen(false)}
+                tabIndex={sidebarOpen ? 0 : -1}
+              >
+                {item.title}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </div>
     </>
   );
