@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "keywords": [
     "Preston",
@@ -29,6 +32,7 @@
   },
   "homepage": "https://github.com/presia27/preston-portfolio",
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.19.11",
     "@phosphor-icons/react": "^2.1.10",
     "dayjs": "^1.11.21",
     "next": "16.2.9",
@@ -47,6 +51,7 @@
     "eslint-plugin-prettier": "^5.5.4",
     "prettier": "^3.7.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.101.0"
   }
 }
