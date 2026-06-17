@@ -22,11 +22,11 @@ export default function Home() {
         <div
           className="border-t sm:border-t-0 sm:border-l border-accent-darker px-4 md:px-10 py-4 xl:mr-[20%] md:min-w-82.5"
         >
-          <h2 className="font-bold sm:border-b border-accent-darker">Preston Sia</h2>
+          <h2 className="font-bold sm:border-b border-accent-darker mb-1 sm:mb-0">Preston Sia</h2>
           <ul>
-            <li>Email: <a href="mailto:pre.sia977@outlook.com" className="link">pre.sia977@outlook.com</a></li>
-            <li>GitHub: <a href="https://github.com/presia27" className="link">presia27</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/preston-sia" className="link">Preston Sia</a></li>
+            <li className="mb-1 sm:mb-0">Email: <a href="mailto:pre.sia977@outlook.com" className="link">pre.sia977@outlook.com</a></li>
+            <li className="mb-1 sm:mb-0">GitHub: <a href="https://github.com/presia27" className="link">presia27</a></li>
+            <li className="mb-1 sm:mb-0">LinkedIn: <a href="https://www.linkedin.com/in/preston-sia" className="link">Preston Sia</a></li>
           </ul>
         </div>
       </section>

@@ -64,11 +64,11 @@ export default function AboutPage() {
 
       <section className="mt-8">
         <h2 className="bigHeader2">Contact</h2>
-        Connect with me using the following methods:
+        <div className="mb-1">Connect with me using the following methods:</div>
         <ul>
-          <li>Email: <a href="mailto:pre.sia977@outlook.com" className="link">pre.sia977@outlook.com</a></li>
-          <li>GitHub: <a href="https://github.com/presia27" className="link">presia27</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/preston-sia" className="link">Preston Sia</a></li>
+          <li className="mb-1">Email: <a href="mailto:pre.sia977@outlook.com" className="link">pre.sia977@outlook.com</a></li>
+          <li className="mb-1">GitHub: <a href="https://github.com/presia27" className="link">presia27</a></li>
+          <li className="mb-1">LinkedIn: <a href="https://www.linkedin.com/in/preston-sia" className="link">Preston Sia</a></li>
         </ul>
       </section>
 
