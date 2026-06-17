@@ -28,13 +28,13 @@ export default async function DetailsPage({ params }: { params: Promise<{ projec
       <article>
         <div className="contentMargins">
           <h1 className="bigHeader">{projectData.title}</h1>
-          <p className="text-[20px] md:w-[60vw]">
+          <p className="sm:text-[20px] md:w-[60vw]">
             {projectData.longDescription}
           </p>
         </div>
 
         <section className="contentMargins mt-6">
-          <div className="text-[18px] grid md:grid-cols-[356px_356px] gap-8">
+          <div className="sm:text-[18px] grid md:grid-cols-[356px_356px] gap-8">
             <div>
               <div>Role:</div>
               <div>{projectData.role}</div>

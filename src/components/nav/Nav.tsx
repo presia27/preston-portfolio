@@ -28,9 +28,9 @@ export function Nav() {
               <img
                 src="/PSiaProfileGraphic.png"
                 alt="Main P Logo"
-                width="56"
-                height="56"
-                className="rounded-2xl"
+                width="40"
+                height="40"
+                className="w-10 h-10 rounded-xl sm:w-14 sm:h-14 sm:rounded-2xl"
               />
             </Link>
           </div>
@@ -50,13 +50,13 @@ export function Nav() {
 
           {/* Mobile toggle */}
           <button
-            className="sm:hidden p-4 content-center hover:cursor-pointer"
+            className="sm:hidden p-4 content-center hover:cursor-pointer hover:text-gray-600"
             onClick={() => setSidebarOpen(true)}
             aria-label="Open navigation menu"
             aria-expanded={sidebarOpen}
             aria-controls="mobile-nav"
           >
-            <ListIcon alt="Open Menu Icon" size={32} />
+            <ListIcon alt="Open Menu Icon" size={24} />
           </button>
 
         </div>
@@ -77,7 +77,7 @@ export function Nav() {
           <div>
             <button
               onClick={() => setSidebarOpen(false)}
-              className="p-4 text-xl shrink-0 hover:cursor-pointer"
+              className="p-4 text-xl shrink-0 hover:cursor-pointer hover:text-gray-600"
               aria-label="Close navigation menu"
               tabIndex={sidebarOpen ? 0 : -1}
             >

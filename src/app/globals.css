@@ -43,6 +43,16 @@ body {
   margin-bottom: 8px;
 }
 
+@media (max-width: 640px) {
+  .bigHeader {
+    font-size: 40px;
+  }
+
+  .bigHeader2 {
+    font-size: 24px
+  }
+}
+
 .smallHeader {
   font-weight: bold;
   font-size: 18px;
