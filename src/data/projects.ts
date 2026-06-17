@@ -590,7 +590,7 @@ export const projects: ProjectDescription[] = [
         url: 'https://github.com/calebaernst'
       },
       {
-        name: 'John Diego Menudo (diego-menudo)',
+        name: 'John Diego (diego-menudo)',
         url: 'https://github.com/diego-menudo'
       }
     ]
@@ -687,7 +687,7 @@ export const projects: ProjectDescription[] = [
         url: 'https://github.com/AlexY305'
       },
       {
-        name: 'John Diego Menudo (diego-menudo)',
+        name: 'John Diego (diego-menudo)',
         url: 'https://github.com/diego-menudo'
       }
     ]

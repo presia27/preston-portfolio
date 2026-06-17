@@ -15,7 +15,8 @@ export const metadata: Metadata = {
     template: '%s - Preston Sia',
     default: 'Preston Sia'
   },
-  description: "Seattle-area developer",
+  description: "I\'m Preston, a person from the Seattle/Tacoma area passionate about software, UI Design, and geospatial technologies.",
+  keywords: ['Preston', 'software', 'Next.js', 'React', 'TypeScript', 'ArcGIS', 'Figma']
 };
 
 export default function RootLayout({
